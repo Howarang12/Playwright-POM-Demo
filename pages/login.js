@@ -7,7 +7,7 @@ exports.LoginPage = class LoginPage {
         this.login_button = page.getByRole('button', { name: ' Login' })
     }
 
-    async goto() {
+    async goToLoginPage() {
         await this.page.goto('https://the-internet.herokuapp.com/login')
     }
 
